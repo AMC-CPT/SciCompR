@@ -1,0 +1,4 @@
+    double.eps double.neg.eps    double.xmin    double.xmax  double.digits 
+  2.220446e-16   1.110223e-16  2.225074e-308  1.797693e+308   5.300000e+01 
+double.min.exp 
+ -1.022000e+03 

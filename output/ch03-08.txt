@@ -1,0 +1,7 @@
+expression({
+    .value <- x^2
+    .grad <- array(0, c(length(.value), 1L), list(NULL, c("x")))
+    .grad[, "x"] <- 2 * x
+    attr(.value, "gradient") <- .grad
+    .value
+})

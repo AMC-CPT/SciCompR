@@ -1,0 +1,4 @@
+done
+[1] "warning: NaNs produced"
+done
+[1] "error: non-numeric argument to mathematical function"

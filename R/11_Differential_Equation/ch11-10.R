@@ -1,0 +1,5 @@
+TIME = c(0, 24, 48)
+AMT = c(100, 150, 100)
+RATE = c(0, 50, 0)
+CMT = c(2, 2, 1)
+DoseHist = cbind(TIME, AMT, RATE, CMT)

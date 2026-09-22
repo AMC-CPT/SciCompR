@@ -1,0 +1,13 @@
+h =  1e-02   forward  1.36e-02   central  4.53e-05
+h =  1e-03   forward  1.36e-03   central  4.53e-07
+h =  1e-04   forward  1.36e-04   central  4.53e-09
+h =  1e-05   forward  1.36e-05   central  5.86e-11
+h =  1e-06   forward  1.36e-06   central  1.63e-10
+h =  1e-07   forward  1.40e-07   central  5.86e-11
+h =  1e-08   forward  6.60e-09   central  6.60e-09
+h =  1e-09   forward  2.15e-07   central  6.60e-09
+h =  1e-10   forward  1.55e-06   central  6.73e-07
+h =  1e-11   forward  3.26e-05   central  1.04e-05
+h =  1e-12   forward  4.32e-04   central  2.10e-04
+           u      forward      central 
+1.110223e-16 1.053671e-08 4.806217e-06 

@@ -1,0 +1,11 @@
+
+	One Sample t-test
+
+data:  w
+t = 1.5667, df = 9, p-value = 0.1516
+alternative hypothesis: true mean is not equal to 5
+95 percent confidence interval:
+ 4.933415 5.366585
+sample estimates:
+mean of x 
+     5.15 

@@ -1,0 +1,2 @@
+[1] "Function 'abs' is not in the derivatives table"
+gamma(x) * digamma(x)

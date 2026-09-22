@@ -1,0 +1,24 @@
+function (MaxIter = 1000) 
+{
+    .Scalar1("MachEps3", MaxIter)
+    lb = 0
+    ub = 1
+    NextEps = (lb + ub)/2
+    i = 0
+    while (NextEps != lb & NextEps != ub & i < MaxIter) {
+        i = i + 1
+        CurEps = NextEps
+        if (1 + CurEps > 1) {
+            ub = CurEps
+        }
+        else {
+            lb = CurEps
+        }
+        NextEps = (lb + ub)/2
+    }
+    attr(CurEps, "iteration") = i
+    return(CurEps)
+}
+[1] 1.110223e-16
+attr(,"iteration")
+[1] 105

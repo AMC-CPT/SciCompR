@@ -1,0 +1,3 @@
+     simulated df.n.minus.1 df.n
+mean  7.020511            7    8
+var  13.813574           14   16

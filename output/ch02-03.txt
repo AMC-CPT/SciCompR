@@ -1,0 +1,4 @@
+          a & b p & a p & b p & q
+==        FALSE FALSE FALSE  TRUE
+identical FALSE FALSE FALSE  TRUE
+all.equal  TRUE  TRUE  TRUE  TRUE

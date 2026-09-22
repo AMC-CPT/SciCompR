@@ -1,0 +1,2 @@
+      normal  exponential    lognormal 
+-0.006486209  0.702303080  0.534252039 

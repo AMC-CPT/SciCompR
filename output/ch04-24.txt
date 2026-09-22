@@ -1,0 +1,4 @@
+[1] 0.4772499
+            trapez1  simps13  simps38     romb   GQuad8 integrate
+evaluations 1.3e+01 1.30e+01 1.30e+01 9.00e+00 8.00e+00  2.10e+01
+error       2.5e-04 4.77e-07 1.11e-06 2.44e-06 4.84e-11  5.55e-17

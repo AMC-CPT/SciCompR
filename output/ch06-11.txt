@@ -1,0 +1,64 @@
+function (x) 
+{
+    .Scalar1("EXP", x)
+    if (is.nan(x)) {
+        warning("Input is NaN.")
+        return(NaN)
+    }
+    else if (x == +Inf) {
+        warning("Input is +Inf.")
+        return(+Inf)
+    }
+    else if (x == -Inf) {
+        warning("Input is -Inf.")
+        return(0)
+    }
+    else if (x == 0) {
+        return(1)
+    }
+    if (x < 0) {
+        x = -x
+        Neg = TRUE
+    }
+    else {
+        Neg = FALSE
+    }
+    BigX = 709.782712893384
+    SmallX = 745.133219101941
+    Limit = if (Neg) 
+        SmallX
+    else BigX
+    if (x > Limit) {
+        if (Neg) {
+            return(0)
+        }
+        else {
+            warning("+Inf produced")
+            return(+Inf)
+        }
+    }
+    else {
+        p0 = 3.15551927656846e-05
+        p1 = 0.00757531801594228
+        p2 = 0.25
+        q0 = 7.510402839987e-07
+        q1 = 0.000631218943743985
+        q2 = 0.0568173026985512
+        q3 = 0.5
+        c1 = 22713/32768
+        c2 = 1.42860682030942e-06
+        invln2 = 1.44269504088896
+        xexp = Round(x * invln2)
+        g = x - xexp * c1 - xexp * c2
+        y = g * g
+        g = g * ((p0 * y + p1) * y + p2)
+        x1 = 0.5 + g/(((q0 * y + q1) * y + q2) * y + q3 - g)
+        xexp = xexp + 1
+        if (Neg) {
+            x1 = 1/x1
+            xexp = -xexp
+        }
+        Half = xexp%/%2
+        return(DENORM(c(DENORM(c(x1, Half)), xexp - Half)))
+    }
+}

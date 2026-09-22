@@ -1,0 +1,6 @@
+cleanup
+[1] 6.931472
+cleanup
+[1] "k must be positive"
+cleanup
+[1] "is.numeric(k) is not TRUE"

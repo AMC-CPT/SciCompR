@@ -1,0 +1,4 @@
+ Newton descent    BFGS 
+      6      60      35 
+      Newton      descent         BFGS 
+3.432276e-20 4.718118e-03 7.664561e-25 

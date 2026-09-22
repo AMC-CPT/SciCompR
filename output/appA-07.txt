@@ -1,0 +1,6 @@
+[1] 0.00 0.25 0.50 0.75 1.00
+[1] 1 1 1 2 2 2
+   double.eps   double.xmax   integer.max 
+ 2.220446e-16 1.797693e+308  2.147484e+09 
+  eps  half 
+FALSE  TRUE 

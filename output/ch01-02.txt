@@ -1,0 +1,4 @@
+[1] 0
+attr(,"Expression")
+[1] "+0.0"
+[1] "-0.0" "+Inf" "-Inf" "NaN"  "NaN" 

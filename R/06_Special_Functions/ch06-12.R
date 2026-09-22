@@ -1,0 +1,6 @@
+par(mar = c(3.4, 3.6, 1.0, 0.6), mgp = c(2.2, 0.7, 0))
+xg2 = seq(-3, 3, length.out = 400)
+plot(xg2, exp(xg2), type = "l", lwd = 2, xlab = "x", ylab = "exp(x)")
+abline(h = 0, v = 0, col = "grey70", lty = 3)
+points(0, 1, pch = 19, cex = 0.8)
+text(0, 1, "(0, 1)", pos = 4, cex = 0.85)

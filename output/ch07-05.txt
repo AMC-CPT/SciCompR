@@ -1,0 +1,4 @@
+     subtract         upper      logupper 
+ 0.000000e+00  1.128588e-19 -4.362815e+01 
+ density integral 
+      10        1 

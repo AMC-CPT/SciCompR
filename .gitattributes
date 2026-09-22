@@ -1,0 +1,12 @@
+# Line endings: LF in the index and in the working tree alike, so that a machine
+# with core.autocrlf true does not show every file as modified.
+* text=auto eol=lf
+
+# Binary: no line-ending conversion, no text diff. The first 8 KB of a small PDF can
+# be pure text, which text=auto may take for a text file, so nail these by extension.
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.gz    binary
+*.RData binary
+*.rds   binary

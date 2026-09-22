@@ -1,0 +1,2 @@
+simulated     exact     sigma 
+ 1.879547  1.879971  2.000000 

@@ -1,0 +1,10 @@
+       P P.calls      Q  Q.calls
+1  Pnorm    erfc  Qnorm  inverfc
+2 Plnorm    erfc Qlnorm  inverfc
+3 Pgamma   gammp Qgamma invgammp
+4 Pchisq   gammp Qchisq invgammp
+5  Pbeta   betai  Qbeta invbetai
+6     Pt   betai     Qt invbetai
+7     Pf   betai     Qf invbetai
+8 Pbinom   betai Qbinom   Pbinom
+9  Ppois   gammq  Qpois    Ppois

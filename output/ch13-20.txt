@@ -1,0 +1,10 @@
+$minimum
+[1] 2
+
+$objective
+[1] 1
+
+   objective  convergence   iterations 
+4.328725e-22 0.000000e+00 3.600000e+01 
+            value  conv 
+ 0.50  0.25  0.25  0.00 

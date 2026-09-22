@@ -1,0 +1,2 @@
+convolution closed.form 
+   27.53355    27.53355 

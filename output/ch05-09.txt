@@ -1,0 +1,8 @@
+function (x, y) 
+{
+    fft(fft(x) * fft(y), TRUE)/length(x)
+}
+function (z, x) 
+{
+    fft(fft(z)/fft(x), TRUE)/length(z)
+}

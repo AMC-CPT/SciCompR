@@ -1,0 +1,4 @@
+# build.R writes a scratch device file only if something goes wrong
+Rplots.pdf
+.Rhistory
+.RData

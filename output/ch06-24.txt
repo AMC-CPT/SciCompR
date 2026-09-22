@@ -1,0 +1,13 @@
+function (a, x) 
+{
+    .Scalar1("gammp", a, x)
+    if (x < 0 | a <= 0) {
+        warning("bad args in gammp")
+        return(NULL)
+    }
+    if (x == 0) 
+        return(0)
+    if (x > 1 & x > a) 
+        return(1 - gcf(a, x))
+    return(gser(a, x))
+}

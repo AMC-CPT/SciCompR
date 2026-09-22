@@ -1,0 +1,5 @@
+c(det(A3), det(t(A3)))                     # property (6)
+c(det(A3 %*% A3), det(A3)^2)               # property (7)
+c(det(2 * A3), 2^3 * det(A3))              # property (5)
+c(det(solve(A3)), 1/det(A3))               # property (3)
+det(diag(c(2, 3, 5)))                      # property (2)

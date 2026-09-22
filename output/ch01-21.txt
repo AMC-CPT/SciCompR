@@ -1,0 +1,11 @@
+function (x = 1, Start = 1) 
+{
+    .Scalar1("MachEps2", x, Start)
+    eps = Start
+    while (x + eps > x) eps = eps/2
+    return(2 * eps)
+}
+         (1)          (2) 
+1.421085e-14 1.776357e-16 
+[1] 64
+[1] 0.8

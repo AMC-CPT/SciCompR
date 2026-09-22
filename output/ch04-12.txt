@@ -1,0 +1,2 @@
+trapezoid   simpson 
+   -2.000    -3.994 

@@ -1,0 +1,3 @@
+      steps evaluations   jacobians 
+        566         692          26 
+[1] 0.01745258

@@ -1,0 +1,7 @@
+[1] 1
+function gradient 
+     255      100 
+       value      max.dev         conv 
+1.724944e-07 4.818436e-04 0.000000e+00 
+function gradient 
+     316      112 

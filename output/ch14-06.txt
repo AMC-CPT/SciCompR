@@ -1,0 +1,4 @@
+   square.form curvature.form 
+      5.019127       5.000000 
+inverse.info  var.of.mean 
+    0.200000     0.200767 

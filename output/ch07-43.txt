@@ -1,0 +1,17 @@
+function (k, n, pe) 
+{
+    .Scalar1("Pbinom", k, n, pe)
+    if (n <= 0 | pe <= 0 | pe >= 1) {
+        warning("bad args in binomial distribution")
+        return(NULL)
+    }
+    if (k < 0) {
+        warning("bad k in binomial distribution")
+        return(NULL)
+    }
+    if (k >= n) 
+        return(1)
+    return(betai(n - k, k + 1, 1 - pe))
+}
+    sumOfTerms incompleteBeta         Pbinom 
+     0.3551674      0.3551674      0.3551674 

@@ -1,0 +1,8 @@
+            value
+sensitivity   0.9
+specificity   0.9
+PPV           0.9
+NPV           0.9
+RD            0.8
+RR            9.0
+OR           81.0

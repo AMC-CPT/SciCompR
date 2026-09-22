@@ -1,0 +1,4 @@
+naive log1p 
+0e+00 1e-16 
+naive expm1 
+0e+00 1e-16 

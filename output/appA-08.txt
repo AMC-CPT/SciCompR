@@ -1,0 +1,6 @@
+1 2 3 4 6 7 
+1 2 3 4 5 
+1 2 3 4 5 
+A B C Z 
+4 3 2 0 
+[1] "not plus" "not plus" "plus"    

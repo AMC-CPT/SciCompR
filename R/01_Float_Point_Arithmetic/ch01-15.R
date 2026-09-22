@@ -1,0 +1,6 @@
+Bin2Dec(Dec2Bin(1.0)) == 1.0          # (1)
+Bin2Dec(Dec2Bin(1.0, FALSE)) == 1.0   # (2)
+Bin2Dec(Dec2Bin(1.2)) == 1.2          # (3)
+Bin2Dec(Dec2Bin(1.2, FALSE)) == 1.2   # (4)
+Bin2Dec(Dec2Bin(1.5)) == 1.5          # (5)
+Bin2Dec(Dec2Bin(1.5, FALSE)) == 1.5   # (6)

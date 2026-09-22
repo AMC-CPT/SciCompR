@@ -1,0 +1,6 @@
+par(mar = c(3.4, 3.4, 0.8, 0.6), mgp = c(2.1, 0.7, 0))
+plot(fy, 0, 3.3, ylim = c(-50, 50), xlab = "x", ylab = "")
+curve(fdy(x)/2, 0, 3.3, lty = 2, add = TRUE)
+abline(h = 0, col = "grey60")
+points(0:3, rep(0, 4), pch = 19, cex = 0.9)
+legend("topleft", c("f(x)", "f'(x)/2"), lty = c(1, 2), bty = "n")
