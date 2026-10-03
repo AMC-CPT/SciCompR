@@ -1,5 +1,5 @@
-d1 = read.csv("https://r.acr.kr/2018KoCancerCases.csv", as.is = TRUE)
-d2 = read.csv("https://r.acr.kr/2017KoBody.csv", as.is = TRUE)
+d1 = read.csv("data/2018KoCancerCases.csv", as.is = TRUE)
+d2 = read.csv("data/2017KoBody.csv", as.is = TRUE)
 
 # the five site columns must add up to Case
 all(with(d1, Hodgkin + NonHL + MM + Leukemia + Solid) == d1$Case)

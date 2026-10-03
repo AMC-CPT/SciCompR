@@ -11,7 +11,8 @@
 #  That is why the blocks are separate files but not separately runnable.
 #
 #  R packages: evaluate, mathr, wnl, deSolve, numDeriv, MASS.
-#  mathr is not on CRAN:  remotes::install_github("ksbae/mathr")
+#  mathr must be 0.1.4 or later; if CRAN has an older one:
+#  remotes::install_github("ksbae/mathr")
 # =====================================================================
 if (!file.exists("R/manifest.tsv"))
   stop("Run from the repository root (where R/manifest.tsv lives).")

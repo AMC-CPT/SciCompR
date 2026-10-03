@@ -15,6 +15,7 @@ R/<장>/<id>.R     본문에 실리는 R 코드 블록 386개 (id 는 책의 블
 R/manifest.tsv    블록의 순서와 그림 옵션. build.R 이 읽는다
 output/<id>.txt   본문에 실린 콘솔 출력 292개
 figures/          본문이 쓰는 그림 74개
+data/             8장이 읽는 자료 파일 2개
 build.R           코드를 다시 돌려 output/ 과 figures/ 를 다시 만든다
 ```
 
@@ -37,12 +38,12 @@ Rscript build.R 11         # 11장만
 Rscript build.R 11 12 appA # 여럿
 ```
 
-필요한 R 패키지: `evaluate`, `mathr`, `wnl`, `deSolve`, `numDeriv`, `MASS`.
-`mathr` 만 CRAN 에 없다.
+필요한 R 패키지: `evaluate`, `mathr`(0.1.4 이상), `wnl`, `deSolve`, `numDeriv`, `MASS`.
 
 ```r
-install.packages(c("evaluate", "wnl", "deSolve", "numDeriv", "MASS"))
-remotes::install_github("ksbae/mathr")
+install.packages(c("evaluate", "mathr", "wnl", "deSolve", "numDeriv", "MASS"))
+# CRAN 의 mathr 가 0.1.4 보다 낮으면:
+# remotes::install_github("ksbae/mathr")
 ```
 
 ## 한 장이 세션 하나다
@@ -55,9 +56,10 @@ remotes::install_github("ksbae/mathr")
 
 블록 10개는 `manifest.tsv` 에 `noeval` 로 표시되어 있고 `build.R` 이 건너뛴다.
 의사코드, 함수 서명, 설치 명령처럼 **읽으라고 실은 것이고 돌리라고 실은 것이
-아닌** 블록이다. 그 가운데 `ch08-20` 하나만은 실제로 도는 코드인데
-`https://r.acr.kr/` 에서 자료를 받아오므로 네트워크가 필요하다. 그래서 건너뛴다.
-직접 돌려 보려면 그 파일을 그대로 R 에 붙여 넣으면 된다.
+아닌** 블록이다. 그 가운데 `ch08-20` 하나만은 실제로 도는 코드다. `data/` 의
+자료 파일 두 개를 읽으며, 책이 그 출력을 싣지 않으므로 `build.R` 도 건너뛴다.
+직접 돌려 보려면 저장소 최상위 폴더를 작업 폴더로 두고 그 파일을 R 에 붙여
+넣으면 된다.
 
 ## 그림
 

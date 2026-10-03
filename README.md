@@ -23,6 +23,7 @@ R/<chapter>/<id>.R   the 386 code blocks printed in the book (id = the book's bl
 R/manifest.tsv       the order of the blocks and their figure options; build.R reads this
 output/<id>.txt      the 292 pieces of console output printed in the book
 figures/             the 74 figures the book uses
+data/                the two data files Chapter 8 reads
 build.R              re-runs the code and remakes output/ and figures/
 ```
 
@@ -45,12 +46,13 @@ Rscript build.R 11         # chapter 11 only
 Rscript build.R 11 12 appA # several
 ```
 
-R packages needed: `evaluate`, `mathr`, `wnl`, `deSolve`, `numDeriv`, `MASS`.
-Only `mathr` is not on CRAN.
+R packages needed: `evaluate`, `mathr` (0.1.4 or later), `wnl`, `deSolve`,
+`numDeriv`, `MASS`.
 
 ```r
-install.packages(c("evaluate", "wnl", "deSolve", "numDeriv", "MASS"))
-remotes::install_github("ksbae/mathr")
+install.packages(c("evaluate", "mathr", "wnl", "deSolve", "numDeriv", "MASS"))
+# if CRAN still has a mathr older than 0.1.4:
+# remotes::install_github("ksbae/mathr")
 ```
 
 ## One chapter is one session
@@ -64,9 +66,10 @@ book lines up one-to-one with the output it produced.
 
 Ten blocks are marked `noeval` in `manifest.tsv` and `build.R` skips them. They
 are pseudocode, function signatures and installation commands — printed **to be
-read, not to be run**. One of them, `ch08-20`, is real code, but it fetches data
-from `https://r.acr.kr/`, so it is skipped to keep `build.R` working without a
-network. To try it, paste that file into R yourself.
+read, not to be run**. One of them, `ch08-20`, is real code: it reads the two
+files in `data/`, and because the book does not print its output, `build.R` skips
+it as well. To try it, paste that file into R with the repository root as the
+working directory.
 
 ## Figures
 
